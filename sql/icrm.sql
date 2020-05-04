@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 11, 2020 at 05:56 AM
+-- Generation Time: May 04, 2020 at 05:23 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -1066,7 +1066,8 @@ INSERT INTO `tbl_category` (`category_id`, `category_name`, `category_detail`) V
 (7, 'คนหาย', NULL),
 (8, 'ของหาย', NULL),
 (9, 'ร้องเรียน', NULL),
-(10, 'สาธารณูปโภค', NULL);
+(10, 'สาธารณูปโภค', NULL),
+(11, 'อื่น ๆ', NULL);
 
 -- --------------------------------------------------------
 
@@ -9963,6 +9964,207 @@ CREATE TABLE `tbl_log` (
   `detail` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `tbl_log`
+--
+
+INSERT INTO `tbl_log` (`log_id`, `username`, `fullname`, `uuid`, `complain_name`, `province`, `process_name`, `createdDate`, `detail`) VALUES
+(1, 'administator', NULL, '5ea78848bce2b', NULL, NULL, NULL, '2020-04-28 03:35:04', 'login not pass'),
+(2, '', NULL, '5ea7884bad05b', NULL, NULL, NULL, '2020-04-28 03:35:07', 'login not pass'),
+(3, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:37:27', 'login pass'),
+(4, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:38:32', 'page index'),
+(5, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:38:55', 'page index'),
+(6, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:39:14', 'page index'),
+(7, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:41:21', 'page index'),
+(8, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:41:32', 'page index'),
+(9, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:44:03', 'page index'),
+(10, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:44:22', 'page index'),
+(11, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:44:43', 'page index'),
+(12, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:46:18', 'page index'),
+(13, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:46:37', 'page index'),
+(14, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:54:31', 'page index'),
+(15, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:55:49', 'page index'),
+(16, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:56:38', 'page index'),
+(17, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:56:53', 'page index'),
+(18, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:57:08', 'page index'),
+(19, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:57:19', 'page index'),
+(20, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:57:43', 'page index'),
+(21, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:57:53', 'page index'),
+(22, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:59:16', 'page index'),
+(23, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 03:59:58', 'page index'),
+(24, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:02:33', 'page index'),
+(25, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:03:02', 'page index'),
+(26, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:03:12', 'page index'),
+(27, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:21:17', 'page index'),
+(28, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:21:41', 'page index'),
+(29, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:22:12', 'page index'),
+(30, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:29:59', 'page index'),
+(31, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:30:52', 'page index'),
+(32, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:32:14', 'page index'),
+(33, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:34:24', 'page index'),
+(34, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:34:51', 'page index'),
+(35, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:39:13', 'page index'),
+(36, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:57:12', 'page index'),
+(37, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:57:30', 'page index'),
+(38, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 04:57:39', 'page index'),
+(39, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:05:21', 'แจ้งเรื่องใหม่'),
+(40, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:11:48', 'page index'),
+(41, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:12:51', 'แจ้งเรื่องใหม่'),
+(42, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:13:38', 'page index'),
+(43, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:14:00', 'page index'),
+(44, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:14:23', 'page index'),
+(45, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:16:10', 'page index'),
+(46, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:16:38', 'page index'),
+(47, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:16:46', 'page index'),
+(48, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:17:33', 'page index'),
+(49, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:19:20', 'page index'),
+(50, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:19:21', 'page index'),
+(51, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:20:11', 'page index'),
+(52, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:21:16', 'page index'),
+(53, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:21:33', 'page index'),
+(54, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:21:41', 'page index'),
+(55, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:21:54', 'แจ้งเรื่องใหม่'),
+(56, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:22:37', 'บันทึกรับเรื่อง'),
+(57, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:33:45', 'page index'),
+(58, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:34:12', 'page index'),
+(59, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:35:27', 'page index'),
+(60, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:35:33', 'page index'),
+(61, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:36:36', 'page index'),
+(62, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:44:48', 'บันทึกรับเรื่อง'),
+(63, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:53:50', 'แจ้งเรื่องใหม่'),
+(64, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:55:20', 'page index'),
+(65, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:55:57', 'page index'),
+(66, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:55:59', 'page index'),
+(67, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:56:35', 'page index'),
+(68, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:57:24', 'page index'),
+(69, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:58:06', 'page index'),
+(70, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:59:13', 'page index'),
+(71, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 05:59:34', 'page index'),
+(72, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 06:00:25', 'page index'),
+(73, 'administator', NULL, '5ea788d74865e', NULL, NULL, NULL, '2020-04-28 06:02:25', 'page index'),
+(74, 'administator', NULL, '5ea80e4e6eda6', NULL, NULL, NULL, '2020-04-28 13:06:54', 'login pass'),
+(75, 'administator', NULL, '5ea80e4e6eda6', NULL, NULL, NULL, '2020-04-28 13:06:58', 'แจ้งเรื่องใหม่'),
+(76, 'administator', NULL, '5ea80e4e6eda6', NULL, NULL, NULL, '2020-04-28 13:07:36', 'บันทึกรับเรื่อง'),
+(77, 'administator', NULL, '5ea80e4e6eda6', NULL, NULL, NULL, '2020-04-28 13:07:43', 'แจ้งเรื่องใหม่'),
+(78, 'administator', NULL, '5ea80e4e6eda6', NULL, NULL, NULL, '2020-04-28 13:08:49', 'บันทึกรับเรื่อง'),
+(79, 'administator', NULL, '5ea80e4e6eda6', NULL, NULL, NULL, '2020-04-28 13:09:25', 'แจ้งเรื่องใหม่'),
+(80, 'administator', NULL, '5ea80e4e6eda6', NULL, NULL, NULL, '2020-04-28 13:10:37', 'บันทึกรับเรื่อง'),
+(81, 'administator', NULL, '5ea835e0c979b', NULL, NULL, NULL, '2020-04-28 15:55:44', 'login pass'),
+(82, 'administator', NULL, '5ea835e0c979b', NULL, NULL, NULL, '2020-04-28 16:43:54', 'page index'),
+(83, 'administator', NULL, '5ea835e0c979b', NULL, NULL, NULL, '2020-04-28 16:43:56', 'page index'),
+(84, 'administator', NULL, '5ea835e0c979b', NULL, NULL, NULL, '2020-04-28 16:44:15', 'page index'),
+(85, 'administator', NULL, '5ea835e0c979b', NULL, NULL, NULL, '2020-04-28 16:44:16', 'page index'),
+(86, 'administator', NULL, '5ea835e0c979b', NULL, NULL, NULL, '2020-04-28 16:50:00', 'page index'),
+(87, 'administator', NULL, '5ea835e0c979b', NULL, NULL, NULL, '2020-04-28 18:35:37', 'logout'),
+(88, 'administator', NULL, '5eae17e25cb9a', NULL, NULL, NULL, '2020-05-03 03:01:22', 'login not pass'),
+(89, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:01:32', 'login pass'),
+(90, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:03:06', 'แจ้งเรื่องใหม่'),
+(91, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:03:14', 'page index'),
+(92, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:03:55', 'page index'),
+(93, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:05:55', 'page index'),
+(94, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:06:01', 'page index'),
+(95, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:08:12', 'page index'),
+(96, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:08:38', 'page index'),
+(97, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:09:33', 'page index'),
+(98, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:11:10', 'page index'),
+(99, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:11:33', 'page index'),
+(100, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:18:40', 'page index'),
+(101, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:21:28', 'page index'),
+(102, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:27:20', 'page index'),
+(103, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:27:45', 'page index'),
+(104, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:28:53', 'page index'),
+(105, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:29:10', 'page index'),
+(106, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:29:36', 'page index'),
+(107, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:29:50', 'page index'),
+(108, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:32:31', 'page index'),
+(109, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:32:32', 'page index'),
+(110, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:32:33', 'page index'),
+(111, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:32:33', 'page index'),
+(112, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:14', 'page index'),
+(113, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:40', 'page index'),
+(114, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:41', 'page index'),
+(115, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:41', 'page index'),
+(116, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:42', 'page index'),
+(117, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:42', 'page index'),
+(118, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:42', 'page index'),
+(119, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:42', 'page index'),
+(120, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:42', 'page index'),
+(121, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:43', 'page index'),
+(122, 'administator', NULL, '5eae17ec362a8', NULL, NULL, NULL, '2020-05-03 03:33:55', 'logout'),
+(123, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:34:03', 'login pass'),
+(124, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:35:00', 'page index'),
+(125, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:38:02', 'page index'),
+(126, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:38:14', 'page index'),
+(127, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:46:30', 'page index'),
+(128, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:46:41', 'page index'),
+(129, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:48:38', 'page index'),
+(130, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:48:51', 'page index'),
+(131, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:54:55', 'page index'),
+(132, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:55:39', 'page index'),
+(133, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:57:46', 'page index'),
+(134, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:58:12', 'page index'),
+(135, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:59:14', 'page index'),
+(136, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 03:59:18', 'page index'),
+(137, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:02:22', 'page index'),
+(138, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:02:30', 'page index'),
+(139, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:02:35', 'แจ้งเรื่องใหม่'),
+(140, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:05:00', 'บันทึกรับเรื่อง'),
+(141, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:06:49', 'บันทึกรับเรื่อง'),
+(142, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:07:06', 'บันทึกรับเรื่อง'),
+(143, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:07:23', 'บันทึกรับเรื่อง'),
+(144, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:07:36', 'บันทึกรับเรื่อง'),
+(145, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:07:48', 'บันทึกรับเรื่อง'),
+(146, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:08:12', 'บันทึกรับเรื่อง'),
+(147, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:09:04', 'บันทึกรับเรื่อง'),
+(148, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:10:08', 'บันทึกรับเรื่อง'),
+(149, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:10:54', 'บันทึกรับเรื่อง'),
+(150, 'administator', NULL, '5eae1f8b66f56', NULL, NULL, NULL, '2020-05-03 04:11:01', 'logout'),
+(151, 'administator', NULL, '5eae283c67f37', NULL, NULL, NULL, '2020-05-03 04:11:08', 'login pass'),
+(152, 'administator', NULL, '5eae283c67f37', NULL, NULL, NULL, '2020-05-03 04:11:29', 'logout'),
+(153, 'administator', NULL, '5eae2854e7c21', NULL, NULL, NULL, '2020-05-03 04:11:32', 'login pass'),
+(154, 'administator', NULL, '5eae2854e7c21', NULL, NULL, NULL, '2020-05-03 04:13:11', 'logout'),
+(155, 'administator', NULL, '5eae28bbbd086', NULL, NULL, NULL, '2020-05-03 04:13:15', 'login pass'),
+(156, 'administator', NULL, '5eae28bbbd086', NULL, NULL, NULL, '2020-05-03 04:14:39', 'logout'),
+(157, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:14:42', 'login pass'),
+(158, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:14:59', 'page index'),
+(159, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:15:01', 'page index'),
+(160, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:15:02', 'page index'),
+(161, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:15:02', 'page index'),
+(162, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:15:49', 'แจ้งเรื่องใหม่'),
+(163, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:25', 'บันทึกรับเรื่อง'),
+(164, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:25', 'page index'),
+(165, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:30', 'page index'),
+(166, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:32', 'page index'),
+(167, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:33', 'page index'),
+(168, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:34', 'page index'),
+(169, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:35', 'page index'),
+(170, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:39', 'page index'),
+(171, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:53', 'page index'),
+(172, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:54', 'page index'),
+(173, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:16:55', 'page index'),
+(174, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:17:02', 'แจ้งเรื่องใหม่'),
+(175, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:18:36', 'page index'),
+(176, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:23:02', 'page index'),
+(177, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:24:21', 'page index'),
+(178, 'administator', NULL, '5eae29125a902', NULL, NULL, NULL, '2020-05-03 04:25:42', 'page index'),
+(179, 'administator', NULL, '5eae7809ec8f9', NULL, NULL, NULL, '2020-05-03 09:51:38', 'login pass'),
+(180, 'administator', NULL, '5eae7809ec8f9', NULL, NULL, NULL, '2020-05-03 10:48:38', 'logout'),
+(181, 'administator', NULL, '5eae856e3a865', NULL, NULL, NULL, '2020-05-03 10:48:46', 'login pass'),
+(182, 'administator', NULL, '5eae856e3a865', NULL, NULL, NULL, '2020-05-03 11:07:44', 'page index'),
+(183, 'administator', NULL, '5eae856e3a865', NULL, NULL, NULL, '2020-05-03 13:33:54', 'page index'),
+(184, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 16:11:06', 'login pass'),
+(185, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 16:22:10', 'page index'),
+(186, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 16:40:14', 'page index'),
+(187, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:12:18', 'page index'),
+(188, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:12:24', 'page index'),
+(189, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:13:04', 'page index'),
+(190, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:13:48', 'page index'),
+(191, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:14:09', 'page index'),
+(192, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:14:53', 'page index'),
+(193, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:14:55', 'page index'),
+(194, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:15:34', 'page index'),
+(195, 'administator', NULL, '5eaed0fa91fad', NULL, NULL, NULL, '2020-05-03 17:16:27', 'page index');
+
 -- --------------------------------------------------------
 
 --
@@ -9985,6 +10187,36 @@ CREATE TABLE `tbl_member` (
 
 INSERT INTO `tbl_member` (`member_id`, `username`, `password`, `firstname`, `lastname`, `createdDate`, `modifiedDate`) VALUES
 (1, 'administator', 'P@ssw0rd', 'Admin', 'System', '2020-04-09', '2020-04-09');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_month`
+--
+
+CREATE TABLE `tbl_month` (
+  `month_id` int(11) NOT NULL,
+  `month_name` varchar(50) NOT NULL,
+  `month_of_day` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_month`
+--
+
+INSERT INTO `tbl_month` (`month_id`, `month_name`, `month_of_day`) VALUES
+(1, 'มกราคม', 31),
+(2, 'กุมภาพันธ์', 28),
+(3, 'มีนาคม', 31),
+(4, 'เมษายน', 30),
+(5, 'พฤษภาคม', 31),
+(6, 'มิถุนายน', 30),
+(7, 'กรกฎาคม', 31),
+(8, 'สิงหาคม', 31),
+(9, 'กันยายน', 30),
+(10, 'ตุลาคม', 31),
+(11, 'พฤศจิกายน', 30),
+(12, 'ธันวาคม', 31);
 
 -- --------------------------------------------------------
 
@@ -10019,9 +10251,24 @@ CREATE TABLE `tbl_news_complaint` (
   `locale_detail` varchar(255) DEFAULT NULL,
   `recorder` varchar(100) DEFAULT NULL,
   `channel` varchar(100) DEFAULT NULL,
-  `createdDate` datetime DEFAULT NULL,
-  `modifiedDate` date DEFAULT NULL
+  `government` varchar(255) DEFAULT NULL,
+  `createdDate` varchar(50) DEFAULT NULL,
+  `modifiedDate` varchar(50) DEFAULT NULL,
+  `createMMYYYY` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_news_complaint`
+--
+
+INSERT INTO `tbl_news_complaint` (`news_complaint_id`, `title_news`, `news_firstname`, `news_lastname`, `news_tel`, `news_address`, `news_province_id`, `news_province_name`, `police_station`, `category_id`, `category_name`, `sub_problem`, `sub_category_id`, `sub_category_name`, `news_dated`, `news_locale`, `locale_province_id`, `locale_province_name`, `locale_amphur_id`, `locale_amphur_name`, `locale_district_id`, `locale_district_name`, `locale_title`, `locale_detail`, `recorder`, `channel`, `government`, `createdDate`, `modifiedDate`, `createMMYYYY`) VALUES
+(1, NULL, 'สมชาย', 'ทองสุข', '0938273334', NULL, NULL, '', NULL, 2, 'อุบัติเหตุ', NULL, 2, 'กำลังดำเนินการ', '12/01/2020 เวลา 13:00', 'แจ้งวัฒนะ', 8, 'สิงห์บุรี', NULL, '', NULL, '', 'อุบัติเหตุ', 'อุบัติเหตุที่....', 'administator', 'Facebook', 'จราจร', '2020-04-28 05:22:37', '3 พ.ค. 2563, 03:55', '4/2563'),
+(2, NULL, 'แจ้งแจ้งแจ้ง', 'แจ้งแจ้งXXX', '0943333333', NULL, NULL, '', NULL, 1, 'บริการจราจร', '', 1, 'แจ้งเรื่องแล้ว', '12/01/2020 เวลา 13:00', NULL, 1, 'กรุงเทพมหานคร', NULL, '', NULL, '', 'รถล้ม', 'รถล้มรถล้มรถล้ม', 'administator', 'Line', 'จราจร', '28 เม.ย. 2563, 05:44', '28 เม.ย. 2563, 05:48', '4/2563'),
+(3, NULL, 'sak2', 'แจ้งแจ้งXXX', '0938273334', NULL, NULL, '', NULL, 9, 'ร้องเรียน', NULL, 4, 'ประสานงาน', '12/01/2020 เวลา 13:00', 'แจ้งวัฒนะ', 4, 'ปทุมธานี', NULL, '', NULL, '', 'แจ้งแจ้งแจ้งแจ้ง', 'แจ้งแจ้งแจ้งแจ้ง', 'administator', 'Line', 'จราจร', '28 เม.ย. 2563, 13:07', '3 พ.ค. 2563, 03:55', '4/2563'),
+(4, NULL, 'กาญจนา', 'มาใหม่', '0893333333', NULL, NULL, '', NULL, 1, 'บริการจราจร', NULL, 1, 'แจ้งเรื่องแล้ว', '12/01/2020 เวลา 13:00', 'แจ้งวัฒนะ', 1, 'กรุงเทพมหานคร', NULL, '', NULL, '', 'อุบัติเหตุ', 'รถชนกันไป', 'administator', 'Line', 'จราจร', '28 เม.ย. 2563, 13:08', '3 พ.ค. 2563, 03:07', '4/2563'),
+(5, NULL, 'ขจรเดช', 'สมัน', '083211111122', NULL, NULL, '', NULL, 8, 'ของหาย', NULL, 3, 'ปัญหายุติแล้ว', '12/01/2020 เวลา 13:00', 'ลาดพร้าว', 5, 'พระนครศรีอยุธยา', NULL, '', NULL, '', 'เงินหาย', 'เงินหาย ที่ห้าง', 'administator', 'Facebook', 'สนง. ลาดพร้าว', '28 เม.ย. 2563, 13:10', '3 พ.ค. 2563, 03:27', '4/2563'),
+(6, NULL, 'นรินทร์', 'เจรืญการ', '093334958', NULL, NULL, '', NULL, 9, 'ร้องเรียน', NULL, 2, 'กำลังดำเนินการ', '03/05/2563 09:19', 'ลาดกระบัง', 1, 'กรุงเทพมหานคร', NULL, '', NULL, '', 'ร้องเรียนเงินเยียวยา', 'ไม่ได้รับเงนเยียวจากภัยโควิท 19', 'administator', 'Line', 'กระทรวงการคลัง', '3 พ.ค. 2563, 04:05', '3 พ.ค. 2563, 04:05', '5/2563'),
+(16, NULL, 'นรงชัย', 'บริบาล', '0893333333', NULL, NULL, '', NULL, 3, 'อุบัติภัย', NULL, 2, 'กำลังดำเนินการ', '12/01/2020 เวลา 13:00', 'แจ้งวัฒนะ', 1, 'กรุงเทพมหานคร', NULL, '', NULL, '', 'อุบัติเหตุ', 'อุบัติเหตุ', 'administator', 'Line', 'สนง. ลาดพร้าว', '3 พ.ค. 2563, 04:16', '3 พ.ค. 2563, 04:16', '5/2563');
 
 -- --------------------------------------------------------
 
@@ -10201,6 +10448,12 @@ ALTER TABLE `tbl_member`
   ADD PRIMARY KEY (`member_id`);
 
 --
+-- Indexes for table `tbl_month`
+--
+ALTER TABLE `tbl_month`
+  ADD PRIMARY KEY (`month_id`);
+
+--
 -- Indexes for table `tbl_news_complaint`
 --
 ALTER TABLE `tbl_news_complaint`
@@ -10238,13 +10491,13 @@ ALTER TABLE `tbl_amphures`
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `tbl_log`
 --
 ALTER TABLE `tbl_log`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=196;
 
 --
 -- AUTO_INCREMENT for table `tbl_member`
@@ -10253,10 +10506,16 @@ ALTER TABLE `tbl_member`
   MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `tbl_month`
+--
+ALTER TABLE `tbl_month`
+  MODIFY `month_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
 -- AUTO_INCREMENT for table `tbl_news_complaint`
 --
 ALTER TABLE `tbl_news_complaint`
-  MODIFY `news_complaint_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `news_complaint_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `tbl_process_status`
